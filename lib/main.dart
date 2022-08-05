@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/layout/button-column.dart';
 import 'package:my_app/layout/section-title.dart';
 
 void main() {
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
           title: const Text('Welcome to Flutter'),
         ),
         // body: const Center(child: RandomWordsList()),
-        body: Column(children: [SectionTitle()]),
+        body: Column(children: [SectionTitle(), ButtonColumn()]),
       ),
     );
   }
