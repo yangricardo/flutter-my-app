@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/random-words.list.dart';
+import 'package:my_app/layout/section-title.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Welcome to Flutter'),
         ),
-        body: const Center(child: RandomWordsList()),
+        // body: const Center(child: RandomWordsList()),
+        body: Column(children: [SectionTitle()]),
       ),
     );
   }
