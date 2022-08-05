@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/layout/button-column.dart';
-import 'package:my_app/layout/lake.image.dart';
-import 'package:my_app/layout/section-title.dart';
-import 'package:my_app/layout/description-section.dart';
+import 'package:my_app/layout/list-section.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,12 +21,7 @@ class MyApp extends StatelessWidget {
           title: const Text('Welcome to Flutter'),
         ),
         // body: const Center(child: RandomWordsList()),
-        body: Column(children: [
-          LakeImage(),
-          SectionTitle(),
-          ButtonColumn(),
-          DescriptionSection()
-        ]),
+        body: ListSection(),
       ),
     );
   }
