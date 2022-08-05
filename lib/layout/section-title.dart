@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/layout/star-favorite.dart';
 
 class SectionTitle extends StatelessWidget {
   @override
@@ -24,10 +25,7 @@ class SectionTitle extends StatelessWidget {
               )
             ],
           )),
-          Icon(
-            Icons.star,
-            color: Colors.red[500],
-          ),
+          const StarFavorite(),
           const Text("42")
         ],
       ),
